@@ -1,7 +1,7 @@
 export const fornecedor=[
     {
         "nome":"Helena",
-        "cnpj":"XX.XXX.XXX/YYYY-ZZ",
+        "cnpj":"xx.xxx.xxx/0001-xx",
         "bairro":"Vila Verde",
         "cidade":"Presidente Prudente",
         "rua":"Coronel Fernandez",

@@ -71,6 +71,7 @@ export default function TabelaEntregadores(props) {
                         }
                     </tbody>
                 </Table>
+                <p>Quantidade de entregadores cadastrados: {props.listaEntregadores.length}</p>
             </Container>
         </>
     );

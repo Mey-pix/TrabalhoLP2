@@ -1,9 +1,9 @@
+import FormCadEntregador from "./Formularios/FormCadEntregador";
 import Pagina from '../layouts/Pagina';
 import { Alert } from "react-bootstrap";
 import { useState } from "react";
 import { entregadores } from "../../dados/mockEntregador";
-import TabelaEntregadores from './Tabelas/TabelaEntregador';
-import FormCadEntregador from "./Formularios/FormCadEntregador"
+import TabelaEntregadores from "./Tabelas/TabelaEntregador";
 
 export default function TelaCadastroEntregador(props) {
     const [exibirTabela, setExibirTabela] = useState(true);

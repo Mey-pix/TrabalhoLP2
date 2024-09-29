@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
+
 export default function FormCadEntregador(props) {
     const [entregador, setEntregador] = useState({
         codigo: 0,
@@ -24,8 +25,10 @@ export default function FormCadEntregador(props) {
                 }));
                 props.setModoAlterar(false);
             } else {
+                // cadastrar entregador
                 props.setListaDeEntregadores([...props.listaEntregadores, entregador]);
             }
+            // exibir a tabela com o entregador incluído/alterado
             props.setExibirTabela(true);
         } else {
             setFormValidated(true);
