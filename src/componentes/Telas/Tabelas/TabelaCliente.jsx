@@ -29,6 +29,7 @@ export default function TabelaClientes(props)
                         <tr>
                             <th>Nome</th>
                             <th>CPF</th>
+                            <th>Data nascimento</th>
                             <th>Endereço</th>
                             <th>CEP</th>
                             <th>Telefone</th>
@@ -42,6 +43,7 @@ export default function TabelaClientes(props)
                                 <tr key={cliente.cpf}>
                                     <td>{cliente.nome}</td>
                                     <td>{cliente.cpf}</td>
+                                    <td>{cliente.data}</td>
                                     <td>{cliente.endereco}</td>
                                     <td>{cliente.cep}</td>
                                     <td>{cliente.telefone}</td>

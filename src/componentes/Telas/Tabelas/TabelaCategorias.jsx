@@ -11,7 +11,7 @@ export default function TabelaCategorias(props)
 
     function excluirCategoria(categoria) 
     {
-        if(window.confirm("Deseja realmente excluir a categoria " + categoria.descricao + "?")) {
+        if (window.confirm("Deseja realmente excluir a categoria " + categoria.descricao + "?")) {
             props.setListaCategorias(props.listaCategorias.filter((item) => {
                 return item.codigo !== categoria.codigo; 
             }));

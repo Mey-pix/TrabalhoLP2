@@ -9,7 +9,7 @@ export default function TelaCadastroCategoria(props)
 {
     const [exibirTabela, setExibirTabela] = useState(true);
     const [listaDeCategorias, setListaDeCategorias] = useState(categoria);
-    const [modoEdicao, setModoEdicao] = useState(false);
+    const [modoAlterar, setModoAlterar] = useState(false);
     const [categoriaSelecionada, setCategoriaSelecionada] = useState({
         codigo: "",
         descricao: ""
@@ -26,15 +26,15 @@ export default function TelaCadastroCategoria(props)
                         listaCategorias={listaDeCategorias}
                         setListaCategorias={setListaDeCategorias}
                         setExibirTabela={setExibirTabela}
-                        setmodoEdicao={setModoEdicao}
+                        setModoAlterar={setModoAlterar}
                         setCategoriaSelecionada={setCategoriaSelecionada}
                     /> :
                     <FormCategoria
                         listaCategorias={listaDeCategorias}
                         setListaCategorias={setListaDeCategorias}
                         setExibirTabela={setExibirTabela}
-                        modoEdicao={modoEdicao}
-                        setmodoEdicao={setModoEdicao}
+                        modoAlterar={modoAlterar}
+                        setModoAlterar={setModoAlterar}
                         categoriaSelecionada={categoriaSelecionada}
                         setCategoriaSelecionada={setCategoriaSelecionada}
                     />

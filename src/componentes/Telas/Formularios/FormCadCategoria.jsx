@@ -15,15 +15,14 @@ export default function FormCategoria(props) {
     function handleSubmit(evento) {
         const form = evento.currentTarget;
         if (form.checkValidity()) {
-            if (props.modoAlterar) 
-            {
+            if (props.modoAlterar) {
+                // Alterar categoria
                 props.setListaCategorias(props.listaCategorias.map((item) => {
                     return item.codigo !== props.categoriaSelecionada.codigo ? item : props.categoriaSelecionada;
                 }));
                 props.setModoAlterar(false);
-            } 
-            else 
-            {
+            } else {
+                // Cadastrar categoria
                 props.setListaCategorias([...props.listaCategorias, categoria]);
             }
             props.setExibirTabela(true);
@@ -56,7 +55,7 @@ export default function FormCategoria(props) {
                         name="codigo"
                         value={props.modoAlterar ? props.categoriaSelecionada.codigo : categoria.codigo}
                         onChange={manipularMudanca}
-                        disabled={props.modoAlterar}
+                        disabled={props.modoAlterar} // Código não pode ser alterado
                     />
                 </Form.Group>
                 <Form.Group as={Col} md="6">

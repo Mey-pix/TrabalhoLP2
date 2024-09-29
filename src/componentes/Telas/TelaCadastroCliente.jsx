@@ -1,14 +1,14 @@
+import FormCadCliente from './Formularios/FormCadCliente';
 import Pagina from '../layouts/Pagina';
 import { Alert } from "react-bootstrap";
 import { useState } from "react";
-import TabelaClientes from './Tabelas/TabelaCliente';
-import FormCadCliente from './Formularios/FormCadCliente';
-import { clientes } from '../../dados/mockClientes';
+import TabelaClientes from "./Tabelas/TabelaCliente";
+import { clientes } from "../../dados/mockClientes"
 
 export default function TelaCadastroCliente(props) {
     const [exibirTabela, setExibirTabela] = useState(true);
     const [listaDeClientes, setListaDeClientes] = useState(clientes); // Lista de clientes
-    const [modoEdicao, setModoEdicao] = useState(false);
+    const [modoAlterar, setModoAlterar] = useState(false);
     const [clienteSelecionado, setClienteSelecionado] = useState({
         nome: "",
         cpf: "",
@@ -28,15 +28,15 @@ export default function TelaCadastroCliente(props) {
                     listaClientes={listaDeClientes}
                     setListaDeClientes={setListaDeClientes}
                     setExibirTabela={setExibirTabela}
-                    setmodoEdicao={setModoEdicao}
+                    setModoAlterar={setModoAlterar}
                     setClienteSelecionado={setClienteSelecionado}
                 /> :
                 <FormCadCliente 
                     listaClientes={listaDeClientes}
                     setListaDeClientes={setListaDeClientes}
                     setExibirTabela={setExibirTabela}
-                    modoEdicao={modoEdicao}
-                    setmodoEdicao={setModoEdicao}
+                    modoAlterar={modoAlterar}
+                    setModoAlterar={setModoAlterar}
                     clienteSelecionado={clienteSelecionado}
                     setClienteSelecionado={setClienteSelecionado}
                 />
