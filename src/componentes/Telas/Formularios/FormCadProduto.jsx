@@ -13,13 +13,15 @@ export default function FormCadProdutos(props) {
         const form = evento.currentTarget;
         if (form.checkValidity()){
             
-            if (!props.modoEdicao){
+            if (!props.modoEdicao)
+            {
                 //cadastrar o produto
                 props.setListaDeProdutos([...props.listaDeProdutos, produto]);
                 //exibir tabela com o produto incluído
                 props.setExibirTabela(true);
             }
-            else{
+            else
+            {
                 //editar o produto
                 /*altera a ordem dos registros
                 props.setListaDeProdutos([...props.listaDeProdutos.filter(

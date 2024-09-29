@@ -5,10 +5,11 @@ import { Alert } from "react-bootstrap";
 import { useState } from "react";
 import { categoria } from '../../dados/mockCategorias';
 
-export default function TelaCadastroCategoria() {
+export default function TelaCadastroCategoria(props) 
+{
     const [exibirTabela, setExibirTabela] = useState(true);
     const [listaDeCategorias, setListaDeCategorias] = useState(categoria);
-    const [modoAlterar, setModoAlterar] = useState(false);
+    const [modoEdicao, setModoEdicao] = useState(false);
     const [categoriaSelecionada, setCategoriaSelecionada] = useState({
         codigo: "",
         descricao: ""
@@ -25,15 +26,15 @@ export default function TelaCadastroCategoria() {
                         listaCategorias={listaDeCategorias}
                         setListaCategorias={setListaDeCategorias}
                         setExibirTabela={setExibirTabela}
-                        setModoAlterar={setModoAlterar}
+                        setmodoEdicao={setModoEdicao}
                         setCategoriaSelecionada={setCategoriaSelecionada}
                     /> :
                     <FormCategoria
                         listaCategorias={listaDeCategorias}
                         setListaCategorias={setListaDeCategorias}
                         setExibirTabela={setExibirTabela}
-                        modoAlterar={modoAlterar}
-                        setModoAlterar={setModoAlterar}
+                        modoEdicao={modoEdicao}
+                        setmodoEdicao={setModoEdicao}
                         categoriaSelecionada={categoriaSelecionada}
                         setCategoriaSelecionada={setCategoriaSelecionada}
                     />
