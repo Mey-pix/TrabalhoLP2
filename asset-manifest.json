@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/TrabalhoLP2BCC/static/css/main.d221dc40.css",
+    "main.js": "/TrabalhoLP2BCC/static/js/main.2272fa9b.js",
+    "static/media/image.png": "/TrabalhoLP2BCC/static/media/image.483393a9323a938b7425.png",
+    "index.html": "/TrabalhoLP2BCC/index.html",
+    "main.d221dc40.css.map": "/TrabalhoLP2BCC/static/css/main.d221dc40.css.map",
+    "main.2272fa9b.js.map": "/TrabalhoLP2BCC/static/js/main.2272fa9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d221dc40.css",
+    "static/js/main.2272fa9b.js"
+  ]
+}
