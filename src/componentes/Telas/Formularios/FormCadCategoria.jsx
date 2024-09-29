@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
-export default function FormCategoria(props) {
+export default function FormCadCategoria(props) {
     const [categoria, setCategoria] = useState({
         codigo: "",
         descricao: ""

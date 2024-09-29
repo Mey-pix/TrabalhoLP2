@@ -1,6 +1,6 @@
 import Pagina from '../layouts/Pagina';
 import TabelaCategorias from './Tabelas/TabelaCategorias';
-import FormCategoria from './Formularios/FormCadCategoria'
+import FormCadCategoria from './Formularios/FormCadCategoria';
 import { Alert } from "react-bootstrap";
 import { useState } from "react";
 import { categoria } from '../../dados/mockCategorias';
@@ -29,7 +29,7 @@ export default function TelaCadastroCategoria(props)
                         setModoAlterar={setModoAlterar}
                         setCategoriaSelecionada={setCategoriaSelecionada}
                     /> :
-                    <FormCategoria
+                    <FormCadCategoria
                         listaCategorias={listaDeCategorias}
                         setListaCategorias={setListaDeCategorias}
                         setExibirTabela={setExibirTabela}
